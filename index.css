@@ -1,0 +1,143 @@
+body {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+:root {
+    --primary-color: #4a88da;
+    /* --secondary-color: #787ff6; */
+    /* --accent-color: ; */
+    --add-new-task-btn: #4a88da;
+    --primary-text-color: #fff;
+    --done-btn-color: #35ba9b;
+    --delete-btn-color: #d94452;
+    --grey-background: #636c77;
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.task-list-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.header-title {
+    color: var(--primary-color)
+}
+
+#new-task-btn {
+    font-size: 1rem;
+    background-color: var(--add-new-task-btn); 
+    border-radius: 0.3125rem;
+    align-self: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    border: none;
+    border-left: 8px solid var(--primary-color);
+    margin-bottom: 1rem;
+    border-radius: 0.3125rem;
+}
+
+
+
+textarea {
+    resize: none;
+}
+
+#add-task-btn, #new-task-btn, input:focus, textarea:focus {
+    outline: transparent;
+}
+
+#add-task-btn {
+    margin-bottom: 20px;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.3125rem;
+    font-weight: 200;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-top: 5px;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+.task-block {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 0.3125rem;
+    margin-bottom: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.task-header-title {
+    margin: 0;
+    padding: 10px;
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: 100;
+}
+
+.task-status {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.task-description {
+    padding: 10px;
+    color: var(--grey-background)
+}
+
+.done-task {
+    background-color: transparent;
+    border: 2px solid var(--done-btn-color);
+    color:  var(--done-btn-color);
+    font-weight: 200;
+}
+
+.delete-task {
+    background-color: transparent;
+    border: 2px solid var(--delete-btn-color);
+    color: var(--delete-btn-color);
+    font-weight: 200;
+}
+
+.task-form {
+    display: block;
+}
+
+.hide {
+    display: none;
+    
+}

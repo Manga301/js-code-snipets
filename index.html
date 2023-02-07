@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="/index.css">
+    </head>
+    <body>
+        <div id="task-list">
+            <div class="task-list-header">
+                <h1 class="header-title">Task List</h1>
+                <button id="new-task-btn">Add New Task +</button>
+            </div>
+            <div class="task-main-section">
+                <div class="task-form">
+                    <input type="text" 
+                    id="title-el" 
+                    name="title" 
+                    placeholder="Title">
+                    
+                    <textarea id="description-el" 
+                    name="description" 
+                    rows="4" cols="50" 
+                    placeholder="Description"></textarea>
+                    
+                    <button id="add-task-btn">Add Task</button>
+                </div>
+                
+                <div id="tasks-el">
+                </div>
+            </div>
+        </div>
+        <script src="/index.js"></script>
+    </body>
+</html>
