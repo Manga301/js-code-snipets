@@ -5,11 +5,19 @@
     <body>
         <div id="task-list">
             <div class="task-list-header">
-                <h1 class="header-title">Task List</h1>
-                <button id="new-task-btn">Add New Task +</button>
+                <h1 class="header-title">Code Snipets</h1>
+                <button id="new-task-btn">Add New Snip +</button>
             </div>
             <div class="task-main-section">
                 <div class="task-form">
+                    <select name="languages" id="coding-language">
+                        <option value="javascript">javascript</option>
+                        <option value="css">css</option>
+                        <option value="html">html</option>
+                        <option value="react">react</option>
+                        <option value="python">python</option>
+                    </select>
+
                     <input type="text" 
                     id="title-el" 
                     name="title" 
@@ -18,9 +26,9 @@
                     <textarea id="description-el" 
                     name="description" 
                     rows="4" cols="50" 
-                    placeholder="Description"></textarea>
+                    placeholder="Code Snip"></textarea>
                     
-                    <button id="add-task-btn">Add Task</button>
+                    <button id="add-task-btn">Add Snip</button>
                 </div>
                 
                 <div id="tasks-el">

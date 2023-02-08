@@ -141,3 +141,18 @@ a {
     display: none;
     
 }
+
+select {
+    appearance: none;   
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+  }
