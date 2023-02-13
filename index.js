@@ -5,6 +5,9 @@ const addTaskBtn = document.getElementById("add-task-btn")
 const newTaskBtn = document.getElementById("new-task-btn")
 const taskForm = document.querySelector(".task-form")
 const taskEl = document.getElementById("tasks-el")
+const saveSnip = document.querySelector(".save-snip")
+
+
 
 
 
@@ -12,6 +15,8 @@ newTaskBtn.addEventListener("click", function(){
     if(taskForm){
         taskForm.classList.remove("hide")
     }
+
+
 })
 
 addTaskBtn.addEventListener("click", function(event) {
@@ -33,6 +38,7 @@ addTaskBtn.addEventListener("click", function(event) {
         renderTasks()
     }
     
+   
     
 })
 
@@ -42,6 +48,8 @@ function renderTasks() {
     let deleteBtn = document.querySelectorAll(".delete-task")
     
     userTasks.forEach((task, id) => {
+        
+
         taskId = id
         
         taskList += `
@@ -49,15 +57,17 @@ function renderTasks() {
                     <h2 class="task-header-title">${task.title}</h2>
                     <p class="task-description">${task.description}</p>
                     <div class="task-status">
-                        <button class="done-task">Done</button>
+                        <button class="save-snip">Save</button>
                         <button class="delete-task">Delete</button>
                     </div>
                 </div>
             ` 
               
     })
-     
+    
+
     taskEl.innerHTML = taskList  
+
     
 }
 
